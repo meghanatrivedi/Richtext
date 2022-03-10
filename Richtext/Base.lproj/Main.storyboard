@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Richtext" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIO-oq-VMn">
+                                <rect key="frame" x="20" y="173" width="374" height="123"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="123" id="OEg-Kl-5RY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QbD-rt-W3l">
+                                <rect key="frame" x="20" y="418" width="374" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLx-5Z-AEH">
+                                        <rect key="frame" x="0.0" y="0.0" width="38" height="100"/>
+                                        <state key="normal" title="Button" image="bold"/>
+                                        <connections>
+                                            <action selector="btnBold:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IEg-eY-ddi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78x-ac-B20">
+                                        <rect key="frame" x="48" y="0.0" width="38" height="100"/>
+                                        <state key="normal" image="bolditalic"/>
+                                        <connections>
+                                            <action selector="btnBoldItalicClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bt1-DZ-ePp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeV-2c-Bbq">
+                                        <rect key="frame" x="96" y="0.0" width="38" height="100"/>
+                                        <state key="normal" title="Button" image="italics"/>
+                                        <connections>
+                                            <action selector="btnItalicClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jb5-eg-brg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5o-cd-fct">
+                                        <rect key="frame" x="144" y="0.0" width="38" height="100"/>
+                                        <state key="normal" title="Button" image="underline"/>
+                                        <connections>
+                                            <action selector="btnUnderLineclick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yCs-dE-yRQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQp-cv-l4B">
+                                        <rect key="frame" x="192" y="0.0" width="38" height="100"/>
+                                        <state key="normal" image="left-align"/>
+                                        <connections>
+                                            <action selector="btnLeftAlignmentClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZM5-u0-lWa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mG1-yl-v42">
+                                        <rect key="frame" x="240" y="0.0" width="38" height="100"/>
+                                        <state key="normal" image="center-align"/>
+                                        <connections>
+                                            <action selector="btnCenterAlignmentClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9SS-WQ-gvP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSQ-8M-q7P">
+                                        <rect key="frame" x="288" y="0.0" width="38" height="100"/>
+                                        <state key="normal" image="align-right"/>
+                                        <connections>
+                                            <action selector="btnRightAlignmentClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mZn-zr-gUR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwv-Pw-jfs">
+                                        <rect key="frame" x="336" y="0.0" width="38" height="100"/>
+                                        <state key="normal" image="justify-text"/>
+                                        <connections>
+                                            <action selector="btnJustifiewAlignmentClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R42-Oe-nL5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="0qy-vn-Zxl"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DIO-oq-VMn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9f6-iL-I2c"/>
+                            <constraint firstItem="DIO-oq-VMn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="129" id="CyG-uB-Yha"/>
+                            <constraint firstItem="DIO-oq-VMn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J8e-bH-jD4"/>
+                            <constraint firstItem="QbD-rt-W3l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VCS-lm-m7n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QbD-rt-W3l" secondAttribute="trailing" constant="20" id="cVo-ap-Eaa"/>
+                            <constraint firstItem="QbD-rt-W3l" firstAttribute="top" secondItem="DIO-oq-VMn" secondAttribute="bottom" constant="122" id="hLO-vd-p4M"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DIO-oq-VMn" secondAttribute="trailing" constant="20" id="znI-UY-KmL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnBold" destination="xLx-5Z-AEH" id="Mcw-vR-tBI"/>
+                        <outlet property="btnBoldItalic" destination="78x-ac-B20" id="mb6-rE-cZb"/>
+                        <outlet property="btnCenterAlignment" destination="mG1-yl-v42" id="EeE-Oy-zA4"/>
+                        <outlet property="btnItalic" destination="ZeV-2c-Bbq" id="pch-zw-E8g"/>
+                        <outlet property="btnJustifieAlignment" destination="lwv-Pw-jfs" id="tqI-Bn-so4"/>
+                        <outlet property="btnRightAlignment" destination="fSQ-8M-q7P" id="icL-3P-2gv"/>
+                        <outlet property="btnUnderLine" destination="n5o-cd-fct" id="4aX-UZ-8tr"/>
+                        <outlet property="lblLeftAlignment" destination="UQp-cv-l4B" id="8u5-7l-zBZ"/>
+                        <outlet property="lblTextLabel" destination="DIO-oq-VMn" id="B72-gq-mx7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="71.651785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="align-right" width="512" height="512"/>
+        <image name="bold" width="512" height="512"/>
+        <image name="bolditalic" width="512" height="512"/>
+        <image name="center-align" width="512" height="512"/>
+        <image name="italics" width="512" height="512"/>
+        <image name="justify-text" width="512" height="512"/>
+        <image name="left-align" width="512" height="512"/>
+        <image name="underline" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
